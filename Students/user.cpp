@@ -9,6 +9,8 @@ User::User(int flag,QString username,QWidget *parent) :
     db = QSqlDatabase::database("conn");
     query=new QSqlQuery(db);
 
+    setWindowTitle(tr("添加用户"));
+
     ui->checkBox_read->setChecked(false);
     ui->checkBox_admin->setChecked(false);
     ui->checkBox_print->setChecked(false);

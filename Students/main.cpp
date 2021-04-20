@@ -23,8 +23,13 @@ int main(int argc, char *argv[])
         qDebug()<<QObject::tr("连接到数据库。");
     }
 
+    qApp->setWindowIcon(QIcon(":/images/windowIcon.png"));
+
+
     Login login;
     login.show();
+
+
 
     return a.exec();
 }

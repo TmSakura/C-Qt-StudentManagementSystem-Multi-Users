@@ -10,6 +10,8 @@ DataDictionary::DataDictionary(QString username,QWidget *parent) :
     db = QSqlDatabase::database("conn");
     query = new QSqlQuery(db);
 
+    setWindowTitle(tr("数据库"));
+
     ui->pushButton_addNation->setEnabled(false);
     ui->pushButton_editNation->setEnabled(false);
     ui->pushButton_deleteNation->setEnabled(false);

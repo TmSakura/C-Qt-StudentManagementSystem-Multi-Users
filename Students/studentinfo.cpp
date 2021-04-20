@@ -7,7 +7,10 @@ StudentInfo::StudentInfo(QString username,QWidget *parent,int flag,QString numbe
     ui->setupUi(this);
     db = QSqlDatabase::database("conn");
     query = new QSqlQuery(db);
+
     setWindowFlags(windowFlags()&~Qt::WindowCloseButtonHint);
+    setWindowTitle(tr("Students"));
+
 
     ui->pushButton_addDebt->setEnabled(false);
     ui->pushButton_addGrade->setEnabled(false);

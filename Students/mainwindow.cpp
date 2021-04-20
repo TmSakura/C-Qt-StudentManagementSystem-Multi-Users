@@ -11,6 +11,8 @@ MainWindow::MainWindow(QString username,QWidget *parent)
 
     ui->label_welcome->setText(QString("欢迎您，"+username));
 
+    setWindowTitle(tr("Students"));
+
     ui->pushButton_add->setEnabled(false);
     ui->pushButton_delete->setEnabled(false);
     ui->pushButton_editOrView->setEnabled(false);

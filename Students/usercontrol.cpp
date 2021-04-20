@@ -10,6 +10,8 @@ UserControl::UserControl(QString username,QWidget *parent) :
     db = QSqlDatabase::database("conn");
     query=new QSqlQuery(db);
 
+    setWindowTitle(tr("用户控制"));
+
     ui->pushButton_add->setEnabled(false);
     ui->pushButton_edit->setEnabled(false);
     ui->pushButton_delete->setEnabled(false);

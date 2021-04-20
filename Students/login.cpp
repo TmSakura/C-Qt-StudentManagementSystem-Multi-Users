@@ -10,6 +10,9 @@ Login::Login(QWidget *parent) :
     db = QSqlDatabase::database("conn");
     query=new QSqlQuery(db);
 
+
+    setWindowTitle(tr("Students"));
+
     updataData_user();
     connect(ui->pushButton_enter,&QPushButton::clicked,this,&Login::clickPushButton_enter);
 }

@@ -7,5 +7,6 @@
         <file>images/cancel.png</file>
         <file>images/exit.png</file>
         <file>images/save.png</file>
+        <file>images/windowIcon.png</file>
     </qresource>
 </RCC>
