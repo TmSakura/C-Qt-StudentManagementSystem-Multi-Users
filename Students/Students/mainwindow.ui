@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1090</width>
+    <height>820</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1090</width>
+    <height>820</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1090</width>
+    <height>820</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QFrame" name="frame_main">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#frame_main{
+Border-image:url(:/images/login_bg.png);
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_welcome">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_exit">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#pushButton_exit{
+Border-image:url(:/images/exit.png);
+}
+#pushButton_exit:pressed{
+border: 1px solid rgb(24, 103, 155);
+border-radius: 5px;
+background-color: rgb(124, 203, 255);
+color: white;
+}
+#pushButton_openPhoto:default{
+
+}
+#pushButton_openPhoto:pressed{
+
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>查找</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="2,2,1">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QFormLayout" name="formLayout_6">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>姓名</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="lineEdit_name"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>入学日期</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QCheckBox" name="checkBox_dataOfAdmission">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QDateEdit" name="dateEdit_dataOfAdmission">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>省份</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboBox_province"/>
+              </item>
+             </layout>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>学号</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="lineEdit_number"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QFormLayout" name="formLayout_2">
+            <property name="horizontalSpacing">
+             <number>6</number>
+            </property>
+            <property name="verticalSpacing">
+             <number>6</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>专业</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="comboBox_profession"/>
+            </item>
+            <item row="1" column="1">
+             <widget class="QComboBox" name="comboBox_city"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>城市</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>大学</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QComboBox" name="comboBox_university"/>
+            </item>
+            <item row="3" column="1">
+             <widget class="QComboBox" name="comboBox_status"/>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string>状态</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="sizeConstraint">
+             <enum>QLayout::SetDefaultConstraint</enum>
+            </property>
+            <item>
+             <widget class="QPushButton" name="pushButton_search">
+              <property name="text">
+               <string>查找</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_clean">
+              <property name="text">
+               <string>清除</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableWidget_info">
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="pushButton_add">
+            <property name="text">
+             <string>添加</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_editOrView">
+            <property name="text">
+             <string>查看/编辑</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_delete">
+            <property name="text">
+             <string>删除</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_export">
+            <property name="text">
+             <string>导出Excel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_import">
+            <property name="text">
+             <string>导入Excel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_print">
+            <property name="text">
+             <string>打印</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_dataDictionary">
+            <property name="text">
+             <string>数据库</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_user">
+            <property name="text">
+             <string>用户</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>高级查找</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="3">
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string>瞳色</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>姓名</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QLabel" name="label_12">
+              <property name="text">
+               <string>血型</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLineEdit" name="lineEdit_name_2"/>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>性别</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="7">
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>入学日期</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="4">
+             <widget class="QComboBox" name="comboBox_blood"/>
+            </item>
+            <item row="0" column="5">
+             <widget class="QLabel" name="label_13">
+              <property name="text">
+               <string>社交途径</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QComboBox" name="comboBox_eye"/>
+            </item>
+            <item row="1" column="2">
+             <widget class="QComboBox" name="comboBox_skin"/>
+            </item>
+            <item row="1" column="8">
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QCheckBox" name="checkBox_dataOfGraduation">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QDateEdit" name="dateEdit_dataOfGraduation"/>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="1">
+             <widget class="QComboBox" name="comboBox_sex">
+              <item>
+               <property name="text">
+                <string>男</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>女</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>肤色</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="8">
+             <widget class="QLabel" name="label_16">
+              <property name="text">
+               <string>毕业日期</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="5">
+             <widget class="QComboBox" name="comboBox_socialStatus"/>
+            </item>
+            <item row="1" column="7">
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QCheckBox" name="checkBox_dataOfAdmission_2">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QDateEdit" name="dateEdit_dataOfAdmission_2"/>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_search_2">
+            <property name="text">
+             <string>查找</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableWidget_info_2">
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>分布图</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1090</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_tool">
+    <property name="title">
+     <string>工具</string>
+    </property>
+    <addaction name="action_options"/>
+   </widget>
+   <widget class="QMenu" name="menu_help">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_aboutQt"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menu_tool"/>
+   <addaction name="menu_help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_aboutQt">
+   <property name="text">
+    <string>关于Qt</string>
+   </property>
+  </action>
+  <action name="action_options">
+   <property name="text">
+    <string>选项</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
