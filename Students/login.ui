@@ -200,6 +200,23 @@ color: white;
      </property>
     </spacer>
    </item>
+   <item>
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Made By ChenJieJun</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>V 1.0</string>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
   </layout>
  </widget>
  <resources/>

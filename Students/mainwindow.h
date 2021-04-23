@@ -9,6 +9,7 @@
 #include "datadictionary.h"
 #include "studentinfo.h"
 #include "usercontrol.h"
+#include "options.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -24,6 +25,7 @@ public:
     ~MainWindow();
 
 private slots:
+    //tab1
     void updataData_table();
     void updataDataDictonary();
     void clickPushButton_add();
@@ -35,10 +37,12 @@ private slots:
     void clickPushButton_importExcel();
     void clickPushButton_exportExcel();
 
+    //tab2
     void updataData_table_2();
     void updataDataDictonary_2();
     void clickPushButton_search_2();
 
+    //tab3
     void updataDataChart();
 
 signals:

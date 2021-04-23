@@ -10,8 +10,7 @@ MainWindow::MainWindow(QString username,QWidget *parent)
     query=new QSqlQuery(db);
 
     ui->label_welcome->setText(QString("欢迎您，"+username));
-
-    setWindowTitle(tr("Students"));
+    setWindowTitle(tr("Students"));    
 
     ui->pushButton_add->setEnabled(false);
     ui->pushButton_delete->setEnabled(false);
@@ -90,8 +89,6 @@ MainWindow::MainWindow(QString username,QWidget *parent)
 
         //Tab3
         updataDataChart();
-
-        //connect(ui->tabWidget,&QTabWidget::tabBarClicked,this,&MainWindow::updataDataChart);
     }
 
     if(remove=="Yes")
@@ -122,6 +119,16 @@ MainWindow::MainWindow(QString username,QWidget *parent)
         parentWidget()->show();
         emit exitReturnLogin();
         delete this;
+    });
+
+    //菜单
+    connect(ui->action_options,&QAction::triggered,this,[this](){
+        Options *options = new Options(this);
+        options->show();
+        hide();
+    });
+    connect(ui->action_aboutQt,&QAction::triggered,this,[this](){
+        QMessageBox::aboutQt(this);
     });
 }
 

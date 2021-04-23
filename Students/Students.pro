@@ -23,6 +23,7 @@ SOURCES += \
     login.cpp \
     main.cpp \
     mainwindow.cpp \
+    options.cpp \
     punish.cpp \
     scholarship.cpp \
     studentinfo.cpp \
@@ -36,6 +37,7 @@ HEADERS += \
     honor.h \
     login.h \
     mainwindow.h \
+    options.h \
     punish.h \
     scholarship.h \
     studentinfo.h \
@@ -49,6 +51,7 @@ FORMS += \
     honor.ui \
     login.ui \
     mainwindow.ui \
+    options.ui \
     punish.ui \
     scholarship.ui \
     studentinfo.ui \
