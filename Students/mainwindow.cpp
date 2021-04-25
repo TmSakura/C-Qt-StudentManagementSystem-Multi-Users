@@ -10,7 +10,7 @@ MainWindow::MainWindow(QString username,QWidget *parent)
     query=new QSqlQuery(db);
 
     ui->label_welcome->setText(QString("欢迎您，"+username));
-    setWindowTitle(tr("Students"));    
+    setWindowTitle(tr("Students"));
 
     ui->pushButton_add->setEnabled(false);
     ui->pushButton_delete->setEnabled(false);
@@ -471,6 +471,45 @@ void MainWindow::clickPushButton_importExcel()
 
 void MainWindow::clickPushButton_exportExcel()
 {
+    query->exec(QString("SELECT * FROM studentinfo"));
+
+    int row=query->size(),column=29;                //row  column为要插入的行和列
+
+    QString fileName = QFileDialog::getSaveFileName(this, tr("Save excel"),
+                                                    ".", tr("Microsoft Office 2003 (*.xls)"));  //获取保存路径
+    if (fileName.isEmpty())
+    {
+        QMessageBox::critical(0, tr("错误"), tr("要保存的文件名为空！"));
+        return;
+    }
+    //建立Excel对象
+    QAxObject *excel = new QAxObject("Excel.Application");
+    excel->dynamicCall("SetVisible(bool)", true); //如果为了看自己的程序到底怎样工作，可以设置为true
+    excel->setProperty("Visible", false);
+    QAxObject *workbooks = excel->querySubObject("WorkBooks");
+    workbooks->dynamicCall("Add");
+    QAxObject *workbook = excel->querySubObject("ActiveWorkBook");
+    QAxObject *worksheet = workbook->querySubObject("Worksheets(int)", 1);
+
+    query->first();
+    for(int i=1;i<=row;i++)
+    {
+        for(int j=1;j<=column;j++)
+        {
+            QAxObject *range = worksheet->querySubObject("Cells(int,int)", i, j);
+            range->setProperty("Value", query->value(j-1).toString());          //此处写要插入的内容
+        }
+        query->next();
+    }
+
+
+    workbook->dynamicCall("SaveAs(const QString&)", QDir::toNativeSeparators(
+                              fileName));
+    QMessageBox::information(this, tr("OK"), tr("保存成功！"));
+    workbook->dynamicCall("Close()");
+    worksheet->clear();//释放所有工作表
+    excel->dynamicCall("Quit()");
+    delete excel;//释放excel
 
 }
 
