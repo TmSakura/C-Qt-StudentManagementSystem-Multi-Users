@@ -4,6 +4,10 @@ C++Qt高级项目 学生管理系统 多用户
 界面和功能仿照YouTube上一位老外的，不过他用的是pascal。
 链接:https://www.youtube.com/watch?v=IosfT8ZzOTI
 
+目前已知未完成功能：操作记录，语言，字体，更新。
+目前已知 Bug：表格里的项未点击情况点击编辑或删除键报错。
+目前已知需要改进的功能：Excel的导入导出。
+
 
 ![image](https://user-images.githubusercontent.com/74124438/116389322-62e52800-a84f-11eb-9c10-27f665eab82c.png)
 
