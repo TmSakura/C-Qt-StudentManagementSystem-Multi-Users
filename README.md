@@ -6,6 +6,8 @@ C++Qt高级项目 学生管理系统 多用户
 
 注：运行前确保当前Qt版本能正常连接MySQL数据库，导入数据库文件，main.cpp里可以更改数据库连接相关信息。
 
+支持Qt版本：5.14，低于该版本可能会编译失败。
+
 目前已知未完成功能：操作记录，头像。
 
 ![image](https://user-images.githubusercontent.com/74124438/116393387-249e3780-a854-11eb-948e-ac45454feadb.png)
