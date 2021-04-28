@@ -14,3 +14,6 @@ C++Qt高级项目 学生管理系统 多用户
 ![image](https://user-images.githubusercontent.com/74124438/116389717-dab35280-a84f-11eb-8de4-f3783e7d8a4c.png)
 
 ![image](https://user-images.githubusercontent.com/74124438/116389827-fc143e80-a84f-11eb-8931-f74e0fda855e.png)
+
+![image](https://user-images.githubusercontent.com/74124438/116390070-42699d80-a850-11eb-97b4-f9a47b726d04.png)
+
