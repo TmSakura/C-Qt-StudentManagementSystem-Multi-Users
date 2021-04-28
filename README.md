@@ -4,7 +4,7 @@ C++Qt高级项目 学生管理系统 多用户
 界面和功能仿照YouTube上一位老外的，不过他用的是pascal。
 链接:https://www.youtube.com/watch?v=IosfT8ZzOTI
 
-ps1：运行前确保当前Qt版本能正常连接MySQL数据库，导入数据库文件，main.cpp里可以更改数据库连接相关信息。
+ps1：运行前请确保当前Qt版本能正常连接MySQL数据库，导入数据库文件，main.cpp里可以更改数据库连接相关信息。
 
 ps2：支持Qt版本：5.14，低于该版本可能会因为某些函数无法编译成功，需要重写。
 
