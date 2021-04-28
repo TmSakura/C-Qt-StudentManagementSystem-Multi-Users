@@ -4,7 +4,9 @@ C++Qt高级项目 学生管理系统 多用户
 界面和功能仿照YouTube上一位老外的，不过他用的是pascal。
 链接:https://www.youtube.com/watch?v=IosfT8ZzOTI
 
-目前已知未完成功能：操作记录，语言，字体，更新。
+注：运行前确保当前Qt版本能正常连接MySQL数据库，导入数据库文件，main.cpp里可以更改数据库连接相关信息。
+
+目前已知未完成功能：操作记录。
 
 ![image](https://user-images.githubusercontent.com/74124438/116389322-62e52800-a84f-11eb-9c10-27f665eab82c.png)
 
