@@ -8,7 +8,7 @@ C++Qt高级项目 学生管理系统 多用户
 
 目前已知未完成功能：操作记录，头像。
 
-![image](https://user-images.githubusercontent.com/74124438/116389322-62e52800-a84f-11eb-9c10-27f665eab82c.png)
+![image](https://user-images.githubusercontent.com/74124438/116393387-249e3780-a854-11eb-948e-ac45454feadb.png)
 
 ![image](https://user-images.githubusercontent.com/74124438/116389534-a0e24c00-a84f-11eb-9ec0-134b74871449.png)
 
